@@ -100,18 +100,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnCreateCon
 
         return String.format("%.3f * 10^%d", coefficient, exponent);
     }
-    public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
-        double summ = 0;
 
-        if (choice) {
-            summ = (x1 * (Math.pow(x2, pos + 1) - 1)) / (x2 - 1);
-        } else {
-            summ = ((pos + 1) * (x1 + arr2[pos])) / 2;
-        }
-        tV.setText(" " + summ);
-        pos = pos +1;
-        tV.setText(" " + pos);
-    }
     public void prev(View view)
     {
         finish();
